@@ -1,0 +1,17 @@
+<!-- fragment_product.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".cartactivity.ProductFragment">
+
+    <!-- Button to navigate to the cart fragment (bottom navigation) -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:clipChildren="false"/>
+</RelativeLayout>

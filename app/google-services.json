@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "516137022511",
+    "project_id": "rawfish-78118",
+    "storage_bucket": "rawfish-78118.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516137022511:android:11fa44d3906adebf3ec2da",
+        "android_client_info": {
+          "package_name": "com.example.anaghafish"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgpG3kmYDTFEvm4lxTJMiQKc1zWxtTBuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

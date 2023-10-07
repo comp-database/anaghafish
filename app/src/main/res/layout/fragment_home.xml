@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user.userui.HomeFragment"
+    android:background="@drawable/gradient1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/skyblue1"
+        >
+        <EditText
+            android:id="@+id/searchEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/search"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:hint=" Search for raw fish..."
+            android:textColor="@color/black"
+            android:autofillHints="search"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="405dp"
+        android:layout_height="220dp"
+        android:paddingStart="5dp"
+        android:paddingTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:id="@+id/adv"
+        android:layout_marginTop="80dp"
+        > <!-- Add margin to push it down -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="405dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Advertisement 1"
+                android:src="@drawable/adv1"
+                />
+
+            <ImageView
+                android:layout_width="405dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Advertisement 2"
+                android:src="@drawable/adv2" />
+
+            <ImageView
+                android:layout_width="405dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Advertisement 2"
+                android:src="@drawable/adv3" />
+
+            <!-- Add more advertisement images as needed -->
+
+        </LinearLayout>
+    </androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/adv"
+        android:layout_marginTop="3dp"
+        android:id="@+id/categoriesLayout"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+
+        android:padding="5dp"
+        >
+
+        <!-- First Pair (ImageView and TextView) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/raw"
+                android:layout_marginEnd="8dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:padding="5dp"
+                app:strokeWidth="3dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/rawcategory"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raw fish"
+
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <!-- Second Pair (ImageView and TextView) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="1dp"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/food1"
+                android:layout_marginEnd="8dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:padding="5dp"
+                app:strokeWidth="3dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fish dishes"
+                android:gravity="center"
+
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <!-- Third Pair (ImageView and TextView) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/driedfish"
+                android:layout_marginEnd="8dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:padding="5dp"
+                app:strokeWidth="3dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dried fish"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+
+        <!-- Fourth Pair (ImageView and TextView) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/discount"
+                android:layout_marginEnd="8dp"
+                app:shapeAppearanceOverlay="@style/circular"
+                android:padding="5dp"
+                app:strokeWidth="1dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:gravity="center"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rawFishRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/categoriesLayout"
+        />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Create a shape with rounded corners (border effect) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="4dp" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+    <!-- Set the background image -->
+    <item android:drawable="@drawable/category1modified" />
+</layer-list>

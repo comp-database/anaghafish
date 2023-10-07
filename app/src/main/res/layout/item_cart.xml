@@ -1,0 +1,106 @@
+<!-- item_cart.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Product Image -->
+    <ImageView
+        android:id="@+id/cartProductImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/raw"
+        android:contentDescription="product image description"/>
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/cartProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Product Name" />
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/cartProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:text="Price: $0.00" />
+
+    <!-- Quantity Adjustment Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Container for Increase Quantity Button -->
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical">
+
+        <Button
+            android:id="@+id/increaseQuantityButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/transparent"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <!-- Quantity TextView -->
+    <TextView
+        android:id="@+id/cartProductQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="1"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Container for Decrease Quantity Button -->
+    <FrameLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical">
+
+    <Button
+        android:id="@+id/decreaseQuantityButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="-"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/transparent"
+        android:gravity="center"/>
+</FrameLayout>
+    </LinearLayout>
+
+    <!-- Remove Button -->
+    <Button
+        android:id="@+id/removeFromCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:layout_gravity="end"
+        android:background="@color/skyblue"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
